@@ -1,3 +1,10 @@
-# Comment added 9
-with open('Test file.txt', 'w') as f:
-    f.write("This is a test message!")
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Hello World!"
+
+
+app.run(host="0.0.0.0")
