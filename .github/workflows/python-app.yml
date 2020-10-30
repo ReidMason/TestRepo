@@ -20,4 +20,4 @@ jobs:
         python-version: 3.8
     - name: Run program
       run: |
-        python main.py
+        docker-compose up -d
